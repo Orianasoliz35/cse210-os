@@ -4,14 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        DisplayWelomeMessage();
+        DisplayWelcomeMessage();
 
         string userName = PromptUserName();
         int userNumber = PromptUserNumber();
 
-        int squaredNumber = SquaredNumber(userNumber);
+        int squaredNumber = SquareNumber(userNumber);
 
-        DisplayResult(userName, squaredName);
+        DisplayResult(userName, squaredNumber);
     }
     static void DisplayWelcomeMessage()
     {
@@ -31,7 +31,7 @@ class Program
 
         return number;
     }
-    static int SquaredNumber()
+    static int SquareNumber(int number)
     {
         int square = number * number;
         return square; 
