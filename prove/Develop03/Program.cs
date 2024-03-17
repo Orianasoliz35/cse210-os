@@ -6,8 +6,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Reference reference = new Reference("John", 3, 16);
-        string scriptureText = "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.";
+        Reference reference = new Reference("Moses", 7, 18);
+        string scriptureText = "And the Lord called his people Zion, because they were one in heart and will, and lived in righteousness; and there were no poor among them.";
         Scripture scripture = new Scripture(reference, scriptureText);
 
         while (!scripture.IsCompletelyHidden())
@@ -22,6 +22,6 @@ class Program
             Console.WriteLine(scripture.GetDisplayText());
         }
 
-        Console.WriteLine("All words are hidden. Program ends.");
+        Console.WriteLine("All words are hidden. Program ends. See you :).");
     }
 }
