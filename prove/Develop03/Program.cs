@@ -18,10 +18,9 @@ class Program
                 break;
 
             scripture.HideRandomWords(3);
-            Console.Clear(); // Clear console screen
+            Console.Clear(); 
             Console.WriteLine(scripture.GetDisplayText());
         }
-
         Console.WriteLine("All words are hidden. Program ends. See you :).");
     }
 }

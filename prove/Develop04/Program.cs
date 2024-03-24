@@ -1,9 +1,21 @@
+//Mindfulness Program File : Week 4
 using System;
-
-class Program
+public class Program
 {
-    static void Main(string[] args)
+    public static void Main()
     {
-        Console.WriteLine("Hello Develop04 World!");
+        Activity[] activities = new Activity[]
+        {
+            new BreathingActivity(),
+            new ReflectionActivity(),
+            new ListingActivity()
+        };
+
+        foreach (Activity activity in activities)
+        {
+            Console.Write($"Enter the duration of the {activity.GetType().Name} Activity (in seconds): ");
+            int duration = int.Parse(Console.ReadLine());
+            activity.StartActivity(duration);
+        }
     }
 }
