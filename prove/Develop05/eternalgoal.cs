@@ -8,7 +8,7 @@ class EternalGoal : Goal
 
     public override void RecordEvent()
     {
-        // Eternal goals are never complete
+       //eternal goals are never complete at all
     }
 
     public override string GetStringRepresentation()
