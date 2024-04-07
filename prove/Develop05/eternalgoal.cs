@@ -1,18 +1,8 @@
 using System;
-class EternalGoal : Goal
+public class EternalGoal : Goal
 {
-    public EternalGoal(string shortName, string description, int points)
-        : base(shortName, description, points)
-    {
-    }
-
     public override void RecordEvent()
     {
-       //eternal goals are never complete at all
-    }
-
-    public override string GetStringRepresentation()
-    {
-        return $"{ShortName} (Eternal)";
+        Console.WriteLine($"Recorded event for eternal goal: {Name}. Gained {Points} points!");
     }
 }
