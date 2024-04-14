@@ -1,3 +1,4 @@
+//Final Project - foundation 4, encapsulation:
 using System;
 using System.Collections.Generic;
 using System.Linq;
